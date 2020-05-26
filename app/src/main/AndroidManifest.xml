@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ads4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_film_strip"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_film_strip"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".AllMovieActivity"
+            android:label="@string/title_activity_all_movie"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
